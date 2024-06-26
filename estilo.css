@@ -1,0 +1,111 @@
+body{
+    background-color: #20ab98;
+}
+
+
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    padding-top: 50px;
+    color: #292827;
+}
+
+
+.caixaprincipal{
+    background-color: #ffffff ;
+    border: 35px solid #292827;
+    border-radius: 900px;
+    width: 650px;
+    height: 650px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+
+.adicionarTarefa{
+    background-color: aliceblue;
+    border-radius: 900px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+    border: 5px solid #5ec8ae;
+}
+
+
+#addTarefa{
+    width: 250px;
+    height: 50px;
+    border-radius: 100px;
+    padding: 5px;
+    background-color: aliceblue;
+    font-weight: 30px;
+    border: none;
+    outline: none;
+}
+
+
+#botaoadd{
+    border-radius: 100px;
+    height: 75px;
+    border: 5px solid #20ab98;
+    background-color: #5ec8ae;
+    color: rgb(40, 104, 83);
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 110px;
+}
+
+
+ul li {
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    user-select: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+}
+
+
+ul li::before {
+    content: "";
+    position: absolute;
+    border-radius: 90px;
+    height: 30px;
+    width: 30px;
+    background-image: url('caixaselec.png');
+    background-size: cover;
+    background-position: center;
+    left: 195px
+}
+
+
+ul li.checked{
+    color: rgb(62, 62, 62);
+    text-decoration: line-through;
+}
+
+
+ul li.checked::before{
+    background-image: url('checked-box-icon-19.jpg');
+}
+ul li span{
+    position: 50px;
+    right: 0;
+    top: 5px;
+    width: 20px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    text-decoration: none;
+}
+ul li span:hover{
+    background: #edeef0;
+    text-decoration: none;
+}
